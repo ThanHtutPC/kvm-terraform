@@ -20,7 +20,7 @@ resource "libvirt_volume" "os_image" {
   count  = var.vm_count
   name   = "${var.hostname}-${count.index + 1}.qcow2"
   pool   = libvirt_pool.kvm.name
-  source = "/home/thanhtut/Downloads/ISO/rhel-8.2-x86_64-dvd.iso"
+  source = "${var.os_img-url}"
   format = "qcow2"
 }
 

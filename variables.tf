@@ -12,18 +12,19 @@ variable "os_img-url" {
 
 variable "username" {
   description = "username for ssh"
-  #default     = "almalinux"
-  default     = "redhat"
+  default     = "almalinux"
+  #default     = "redhat"
 }
 
 variable "hostname" {
-  default     = "rhel8"
-  #default = "alma9"
+  #default     = "rhel8"
+  default = "alma9"
   description = "domain name in libvirt, not hostname"
 }
 
 variable "os_type_ci" {
-  default = "redhat8"
+  #default = "redhat8"
+  default = "alma9"
 }
 
 variable "domain" {
@@ -43,7 +44,8 @@ variable "cpu" {
 }
 
 variable "vm_domain_name" {
-  default = "rhel8"
+  default = "alma9"
+  #default = "rhel8"
 }
 
 variable "terraform_network" {
